@@ -23,7 +23,9 @@ document.querySelector("form").addEventListener("submit", (e) => {
     if (lengthIn) {
 
         showPass.innerText = getRandomInt(lengthIn, ifChecked);
-        showPass.style.fontSize = "32px"
+        showPass.style.fontSize = "32px";
+        showPass.style.height = "fit-content";
+        showPass.style.width = "fit-content";
 
         function getRandomInt(length, mixedCase) {
 
